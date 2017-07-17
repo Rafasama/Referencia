@@ -1,0 +1,4 @@
+Options -Indexes
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ http://www.crm2u.srv.br/referencia/$1 [R,L]
