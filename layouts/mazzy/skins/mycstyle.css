@@ -1,0 +1,421 @@
+
+/***********************************************/
+/************** NOVEMBER 2015 MYC **************/
+
+/***********************************************/
+/***********************************************/
+
+/* DETAIL/FULL/EDIT*/
+/* label and field */
+.mycdivlabel {background: #FAFAFA;padding: 5px; line-height: 23px; }
+.mycdivfield {background: #f2f2f2; padding: 5px;line-height: 23px; margin-left: 0px!important;}
+.mycdivtitle {padding: 8px;font-weight: bold;}
+.recordLabel, .title_label {margin-left:5px!important;width:250px!important;line-height: 20px;}
+.recordLabel h3{margin-left:5px!important;line-height: 20px!important;}
+/*edit*/
+#EditView .mycdivlabel {min-height:41px;}
+#EditView .mycdivfield {min-height:41px;}
+/*CALENDAR*/
+.mycdivcalendar .mycdivlabel{margin-left:3px!important;}  
+.mycdivlabel .chzn-container {width:100%!important;}
+/*box calendar picker*/
+div.datepicker{position:fixed!important; top:20%!important; left:35%!important;}
+/* Federico - sidebars fix DESKTOP*/ 
+.bodyContents {max-height: 100% !important; position: absolute !important;overflow: scroll !important;left: 50px;right: 0px; bottom: 0px; top: 0px; -webkit-overflow-scrolling: touch;}
+.mazzy-nav{margin-left: 50px;}
+.mycloaderbg{width: 100%;height: 100%;position: absolute;top: 0px;z-index: 9999999999999;background-color: rgba(0,0,0,0.75);}
+.mycloadingcontent{position: relative;width: 100%;text-align: center;margin-top: 40%;font-size: 90px;color: white;}  
+#mazz-sidebar-right, #mazzy-sidebar-left {-webkit-overflow-scrolling: touch;}
+footer{ display: none !important;}	
+#searchmobile {display:none;}
+
+/* Federico - QuickCreate modal fix DESKTOP & MOBILE*/
+.blockPage{ z-index: 1050 !important; }
+.blockOverlay { z-index: 1040 !important; }
+#mazzy-sidebar-right,#mazzy-sidebar-left{  z-index: 999 !important; }
+.navbar-fixed-top {  z-index: 998 !important; }
+
+.quickCreateContent { overflow: scroll !important; -webkit-overflow-scrolling: touch; }
+ 
+ .globalSearchResults .slimScrollDiv > .contents {height:100%!important; overflow: scroll!important; webkit-overflow-scrolling: touch; padding-bottom:100px;}
+ .globalSearchResults {max-width:100%!important; min-height:100%!important;height:100%!important;}
+ .globalSearchResults > .row-fluid {height:100%;}
+ .globalSearchResults .slimScrollDiv {height:80%!important;}
+ 
+/* Federico - MAZZY*/
+.mycloaderbg{background-color: rgba(255,255,255,0.75);}
+.mycloadingcontent{position: relative;width: 100%;text-align: center;margin-top: 40%;font-size: 90px; color: gray;} 
+
+/* DESKTOP AND  BIG SCREEN */
+@media (min-width: 801px) {
+  .navbar-inner .span1 {display:none;}
+  #mycaction {display:none;}
+  .mycrelatedmobile {display:none;}
+  
+  /* Federico - MAZZY*/
+  /* .mycloaderbg{ display: none;} */
+  .mycloaderbg .mycloadingcontent{ margin-top: 25%}
+  
+  #customFilterBk{display:none;}
+  
+  /* Federico - QuickCreate modal fix DESKTOP*/
+  .blockPage{width: 90% !important;	height: 90% !important;	left: 5% !important;top: 40px!important;}  
+  .blockPage .mycdivlabel{margin-left: 10px !important;}
+  .blockPage .mycdivlabel:first-child{ margin-left: 0px !important; }
+  
+  /* Federico - DETAIL / SUMMARY / EDIT fix */
+  .details .mycdivlabel {width: 15% !important; margin-left: 0px !important; }
+  .details .mycdivfield {width: 35% !important;}
+  .summaryViewEntries .mycdivlabel {width: 30% !important; margin-left: 0px !important; }
+  .summaryViewEntries .mycdivfield {width: 70% !important; margin-left: 0px !important; }
+  #EditView .row-fluid, #detailView > .contents .mycdetailfluid, .summaryViewEntries {
+   display: table;table-layout: fixed;height: 100%;width: 100%;}
+  #EditView .row-fluid > div[class*="span"] , #detailView > .contents .mycdetailfluid > div[class*="span"],
+  .summaryViewEntries > div[class*="span"] { display: table-cell;float: none;height: 100%;vertical-align: middle;}
+  #EditView .row-fluid > .span2 , #detailView > .contents > .mycfluid > .span2 {width: 15% !important;}
+  #EditView .row-fluid > .span4 , #detailView > .contents > .mycfluid > .span4 {width: 35% !important;}
+  .mycdivlabel{text-align: right;}
+
+  .mycmobileannouncement{ display: none;}
+  .myctopannouncement{ display: block }
+}
+
+/* LANDSCAPE PHONES AND DOWN */
+@media (max-width: 800px) {
+  .navbar-inner {max-width:760px;} 
+  .navbar-inner .span5, .span4#headerLinks .qCreate  {display:none!important;}
+  #headerLinksCompact {padding: 0px 20px 0px 0px;}
+  .navbar-inner .span1 {display:inline;}
+  .navbar-inner .span1 .btn-navbar {   background: #555!important;}
+  #mazzy-sidebar-right, #mazzy-sidebar-left { overflow-x:hidden;}
+  #searchmobile {display:inline-block;}
+  /* DETAIL/FULL/EDIT*/
+  .detailViewInfo .contents {/*background-color: transparent!important; padding: 0px!important; */}
+  .summaryImg {}
+  /*mycfluid*/
+  .mycfluid > .span7, .mycfluid > .span5 {width:100%;}
+  .mycfluid > .span6 {width:100%;}
+  /* detail */
+  .detailViewTitle .detailViewPagingButton {width: 60px; margin-left: -1px;}
+  .detailViewTitle .recordLabel {width:160px!important; line-height: 20px; margin-left:4px!important;font-size: 15px;word-break: keep-all;}
+  .detailViewTitle .recordLabel h3{ line-height: 20px!important; margin-left:4px!important;}
+  .detailViewTitle .title_label{margin-left:4px!important;font-size: 13px;}
+  /* edit */
+  #EditView .mycdivlabel {min-height:1px;}
+  #EditView .mycdivfield {min-height:1px;}
+  /*box calendar picker*/
+   div.datepicker{left:1%!important;}
+  .gridster ul li.dashboardWidget{ width: 90%; max-width: 760px;}
+  /* summary */
+  .span4 .listViewActions {width: 260px; margin-top: 50px;}
+  .summaryView {max-width: 760px;min-height: 350px;}
+  .summaryWidgetContainer{max-width: 760px;}
+  .summaryWidgetContainer .noCommentsMsgContainer{max-width: 760px;}
+  .summaryWidgetContainer .widget_contents {max-width:760px;}
+  [data-trigger^="listSearch"] {text-indent: -9999px;line-height: 0;}
+  [data-trigger^="listSearch"]:after {font-family: FontAwesome; content: "\f002";text-indent: 0;display: block;line-height: initial;}
+  .row-fluid > [class*="span"]:nth-child(3) {margin-left: 0;}
+  #relatedActivities {max-width:760px;}
+  .commentTitle .commentorInfo {    margin-left: 10px;}
+  .commentContainer .commentDetails {min-width: 200px; max-width: 760px!important;}
+  .commentContainer .commentDetails .commentDiv {    width: 200px; max-width: 760px;}
+  /* label and field */
+  .mycdivlabel {width:40%!important;}
+  .mycdivfield {width:50%!important;}
+  #detailView .mycdivlabel, #EditView .mycdivlabel, .quickCreateContent .mycdivlabel {width: 100%!important;}
+  #detailView .mycdivfield, #EditView .mycdivfield, .quickCreateContent .mycdivfield {width: 100%!important;}
+  #detailView .contents .row .span6 .mycdivfield, #EditView .contents .row .span6 .mycdivfield {width: 90%!important;}
+  #detailView .contents .row .span6 {width: 90%!important;}
+  #detailView .mycdivlabel label, #EditView .mycdivlabel label, .quickCreateContent .mycdivlabel label {float: left!important;}
+  /* related module in detail*/
+  .mycrelated {display:none;}
+  .mycrelatedtab{padding: 7px 15px;}
+  .mycrelatedtab.active, .mycrelatedtab:active{background:#ccc;}
+  /* actions icons */
+  #mycactions {display:none;}
+  #mycaction .actionsdd {width: 16px!important;}
+  #mycaction > div {display: inline-block;}
+  /* custom filter */
+  #customFilter, #s2id_customFilter{display:none;}
+  #customFilterBk{text-overflow: ellipsis!important;white-space: nowrap!important;width: 200px!important;}
+  /*MAIL MANAGER*/
+  #email_con .span3 .listViewActions {margin-top: 90px!important;width: 260px!important;}
+  #open_email_con .span5 {min-height: 150px;}
+  /* CALENDAR */
+  .fc-header td {display: block;margin-bottom: 10px;}
+  .fc-header-left, .fc-header-center, .fc-header-right {width: 100%!important;}
+  /* QUICK CREATE */
+  .modal-header h3{font-size:12px;}
+  .quickCreateActions {margin-bottom: 50px;}
+  /* WORKFLOW */
+  .workFlowContents {margin-bottom: 50px;}
+  [id^="workflow_step"] .control-label {width: 80px!important;}
+  [id^="workflow_step"] .controls {margin-left: 90px!important;}
+  /* Federico - sidebars fix */
+  #mazzy-sidebar-left{width: 0px!important ;}
+  .mazzy-nav{margin-left: 0px ;}
+  .mazzymenutext{ display: block !important;}
+  .bodyContents {position: fixed !important;left: 0px;right: 0px;}
+  /* Federico - QuickCreate modal fix MOBILE*/
+  .blockPage{width: 90% !important;left: 5% !important;height: 90% !important;top: 2% !important;} 
+  #globalmodal { height: 100% !important; }
+  #globalmodal .modelContainer { height: 100% !important; }
+  #globalmodal form  { height: 100% !important; }
+  #globalmodal form .slimScrollDiv  { height: 80% !important; }
+  #globalmodal form .slimScrollDiv .quickCreateContent { height: 100% !important; }
+  .mycdivfield input, .mycdivfield select, .mycdivfield .chzn-container{ max-width: 95%;}
+  .mycrelatedmobile > .span4{max-width: 100% !important; }
+  .detailViewTitle > .span10 > .row > .span4 { max-width: 100%; }
+  .contentsDiv > div { padding: 0 10px !important; }
+  .summaryView {padding: 10px;}
+  /* Version 2.1 */
+  .modal { width: 280px;  max-width: 760px; left: 90%; top: 60%!important;}
+  /* Version 2.2 */
+  .dashboard_notebookWidget_viewarea, .dashboardWidgetContent{overflow: scroll !important;}
+  .highcharts-container{height: 200px!important;overflow: scroll !important;}
+  .gridster ul li.dashboardWidget .dashboardWidgetHeader .dashboardTitle .btn {text-indent: -9999px;line-height: 0;}
+  .gridster ul li.dashboardWidget .dashboardWidgetHeader .dashboardTitle .btn:after {font-family: FontAwesome; content: "\f002";text-indent: 0;display: block;line-height: initial;}
+  .gridster ul li.dashboardWidget .dashboardWidgetHeader .dashboardTitle .btn {overflow: hidden; text-overflow: ellipsis!important;white-space: nowrap!important;
+    width: 34px!important;}
+  .jqplot-target{height: 180px!important;overflow: scroll !important;}
+  .dashboardWidgetHeader td.span5{padding:0px!important;}
+  
+  /*CALENDAR FIX MOBILE v2.3 */
+  .fc-view-agendaWeek{min-width: 1000px;}
+  .fc-content{overflow-x: scroll;}
+  
+  .mycmobileannouncement{ display: block; }
+  .myctopannouncement{ display: none }
+  
+  .searchElementContainer{  display: none  }
+
+}
+
+/* OPTIMIZATIONS*/
+@media (min-width: 450px) and (max-width: 800px){
+ #detailView .mycdivlabel, #EditView .mycdivlabel {width: 40%!important;}
+ #detailView .mycdivfield, #EditView .mycdivfield {width: 60%!important;}
+ /* Version 2.1 */
+  .modal { width: 450px; max-width: 760px;left: 60%; top: 40%!important;}
+}
+.row-fluid > div[class*="span"], .row > div[class*="span"]{ box-sizing: border-box;}
+.mycdivtitle{	border-bottom: 1px solid #ddd;}
+
+.mainContainer{	margin-top: 10px;}
+.SendEmailFormStep2 .well{background:#ddd!important;border-color:#ccc!important;}
+
+/* Version 2.1 */
+.highcharts-background {height: 200px;}
+/*Version 2.2*/
+#EditView .span5 >.row-fluid.margin0px {height:auto!important;} /*picklist invoice*/
+.quickWidgetContainer .quickWidget .widgetContainer a:hover{color:#333;}; /*pdfmaker widget*/
+@media (max-width: 960px) {
+  .navbar-inner .span5, .span4#headerLinks .qCreate  {display:none!important;}
+}
+
+/* PRODUCT BLOCK CUSTOMIZATIONS */
+/* Description 3 rows + 100 char width */
+.lineItemTable th:first-child{min-width: 500px;}
+.lineItemTable .lineItemCommentBox{width: 100%;min-height: 65px;}
+/* Product/Service Name full width */
+.lineItemTable .productName{width: 350px;	}
+.lineItemTable .popupTable th:first-child {min-width: 100%;}
+/* END PRODUCT BLOCK CUSTOMIZATIONS */
+
+#mazzy-sidebar-left{
+	-ms-overflow-style: -ms-autohiding-scrollbar !important;
+}
+.settingIcons .fa{
+color:black !important;
+}.settingIcons .fa{
+color:black !important;
+}
+.popover {float:left;}
+
+#repeatUI .row-fluid{
+	height: auto !important;
+}
+
+.myc-map-modal{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.8);
+	z-index: 9;
+	text-align: center;
+}
+.myc-map-modal div{
+	margin: auto;
+}
+
+.mazzy-menu-cat a {
+	min-height: 20px;
+}
+
+
+.myc-progressbar {
+			height: 10px;  /* Can be anything */
+			position: relative;
+			background: #555; 
+			-moz-border-radius: 25px;
+			-webkit-border-radius: 25px;
+			border-radius: 25px;
+			padding: 3px;
+			margin: 5px;
+			-webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+			-moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3);
+			box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);
+		}
+		.myc-progressbar > span {
+			display: block;
+			height: 100%;
+			   -webkit-border-top-right-radius: 20px;
+			-webkit-border-bottom-right-radius: 20px;
+			       -moz-border-radius-topright: 20px;
+			    -moz-border-radius-bottomright: 20px;
+			           border-top-right-radius: 20px;
+			        border-bottom-right-radius: 20px;
+			    -webkit-border-top-left-radius: 20px;
+			 -webkit-border-bottom-left-radius: 20px;
+			        -moz-border-radius-topleft: 20px;
+			     -moz-border-radius-bottomleft: 20px;
+			            border-top-left-radius: 20px;
+			         border-bottom-left-radius: 20px;
+			background-color: rgb(43,194,83);
+			background-image: -webkit-gradient(
+			  linear,
+			  left bottom,
+			  left top,
+			  color-stop(0, rgb(43,194,83)),
+			  color-stop(1, rgb(84,240,84))
+			 );
+			background-image: -moz-linear-gradient(
+			  center bottom,
+			  rgb(43,194,83) 37%,
+			  rgb(84,240,84) 69%
+			 );
+			-webkit-box-shadow:
+			  inset 0 2px 9px  rgba(255,255,255,0.3),
+			  inset 0 -2px 6px rgba(0,0,0,0.4);
+			-moz-box-shadow:
+			  inset 0 2px 9px  rgba(255,255,255,0.3),
+			  inset 0 -2px 6px rgba(0,0,0,0.4);
+			box-shadow:
+			  inset 0 2px 9px  rgba(255,255,255,0.3),
+			  inset 0 -2px 6px rgba(0,0,0,0.4);
+			position: relative;
+			overflow: hidden;
+		}
+		.myc-progressbar > span:after, .myc-progressbar-animate > span > span {
+			content: "";
+			position: absolute;
+			top: 0; left: 0; bottom: 0; right: 0;
+			background-image:
+			   -webkit-gradient(linear, 0 0, 100% 100%,
+			      color-stop(.25, rgba(255, 255, 255, .2)),
+			      color-stop(.25, transparent), color-stop(.5, transparent),
+			      color-stop(.5, rgba(255, 255, 255, .2)),
+			      color-stop(.75, rgba(255, 255, 255, .2)),
+			      color-stop(.75, transparent), to(transparent)
+			   );
+			background-image:
+				-moz-linear-gradient(
+				  -45deg,
+			      rgba(255, 255, 255, .2) 25%,
+			      transparent 25%,
+			      transparent 50%,
+			      rgba(255, 255, 255, .2) 50%,
+			      rgba(255, 255, 255, .2) 75%,
+			      transparent 75%,
+			      transparent
+			   );
+			z-index: 1;
+			-webkit-background-size: 50px 50px;
+			-moz-background-size: 50px 50px;
+			background-size: 50px 50px;
+			-webkit-animation: move 2s linear infinite;
+			-moz-animation: move 2s linear infinite;
+			   -webkit-border-top-right-radius: 20px;
+			-webkit-border-bottom-right-radius: 20px;
+			       -moz-border-radius-topright: 20px;
+			    -moz-border-radius-bottomright: 20px;
+			           border-top-right-radius: 20px;
+			        border-bottom-right-radius: 20px;
+			    -webkit-border-top-left-radius: 20px;
+			 -webkit-border-bottom-left-radius: 20px;
+			        -moz-border-radius-topleft: 20px;
+			     -moz-border-radius-bottomleft: 20px;
+			            border-top-left-radius: 20px;
+			         border-bottom-left-radius: 20px;
+			overflow: hidden;
+		}
+
+		.myc-progressbar-animate > span:after {
+			display: none;
+		}
+
+		@-webkit-keyframes move {
+		    0% {
+		       background-position: 0 0;
+		    }
+		    100% {
+		       background-position: 50px 50px;
+		    }
+		}
+
+		@-moz-keyframes move {
+		    0% {
+		       background-position: 0 0;
+		    }
+		    100% {
+		       background-position: 50px 50px;
+		    }
+		}
+
+
+		.myc-progressbar-blue > span {
+			background-color: #039BE5;
+			background-image: -moz-linear-gradient(top, #039BE5, #207ce5);
+			background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #039BE5),color-stop(1, #207ce5));
+			background-image: -webkit-linear-gradient(#039BE5, #207ce5);
+		}
+		
+		.myc-progressbar-orange > span {
+			background-color: #f1a165;
+			background-image: -moz-linear-gradient(top, #f1a165, #f36d0a);
+			background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f1a165),color-stop(1, #f36d0a));
+			background-image: -webkit-linear-gradient(#f1a165, #f36d0a);
+		}
+
+		.myc-progressbar-red > span {
+			background-color: #f0a3a3;
+			background-image: -moz-linear-gradient(top, #f0a3a3, #f42323);
+			background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f0a3a3),color-stop(1, #f42323));
+			background-image: -webkit-linear-gradient(#f0a3a3, #f42323);
+		}
+
+		.myc-progressbar-nostripes > span > span, .myc-progressbar-nostripes > span:after {
+			-webkit-animation: none;
+			-moz-animation: none;
+			background-image: none;
+		}
+		
+		
+.pdfMakerWidgetDiv{
+	width: 100%;
+}		
+.pdfMakerWidgetDiv .chzn-results li, .pdfMakerWidgetDiv .chzn-single span{
+	color: black;
+}
+.btn-group + .btn-group {
+    margin-left: -1px;
+}
+
+/* Version 2.8*/
+@media (max-width: 800px){
+.mycQsFieldLabel{display: block;line-height: 26px;}}
+
+#leadAccordion {height: 460px!important;}
+#convertLeadForm .slimScrollDiv{height: 460px!important;}
